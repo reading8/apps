@@ -1,0 +1,27 @@
+spring:
+  datasource: #配置数据源
+    driver-class-name: com.mysql.cj.jdbc.Driver  #mysql8.0以上版本驱动
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.0.109/shell?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    encoding:  utf-8
+    servlet:
+      content-type: text/html
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印输出SQL语句
+server:
+  servlet:
+    context-path: /wb
+  port: 80
+wechat:
+    mpAppId: wxa6274ee393150249
+    mpAppSecret: 04a1dad095b6686d39b72f9572139948
+    mchId: 1467624902
+    mchKey: yadsdflksdlfksldjfsjkfdjslfjlskj
+    notifyUrl: http://xinoso.natapp1.cc/sell/pay/notify
+
+
